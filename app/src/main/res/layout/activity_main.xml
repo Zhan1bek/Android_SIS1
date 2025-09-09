@@ -10,7 +10,6 @@
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/gradient_2"
         app:title=""
         app:navigationIcon="@drawable/outline_arrow_drop_down_circle_24"
         app:contentInsetStartWithNavigation="0dp"
@@ -125,13 +124,23 @@
                 </com.google.android.material.chip.ChipGroup>
             </HorizontalScrollView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Quick choise"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="6dp"/>
+
             <GridLayout
                 android:id="@+id/quick_grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="3"
                 android:orientation="horizontal"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="2dp">
 
                 <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
@@ -170,7 +179,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:src="@drawable/bg_album"/>
+                            android:src="@drawable/bg_album_2"/>
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
@@ -190,7 +199,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:src="@drawable/bg_album" />
+                            android:src="@drawable/bg_album_3" />
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
@@ -210,7 +219,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:src="@drawable/bg_album" />
+                            android:src="@drawable/bg_album_4" />
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
@@ -230,7 +239,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:src="@drawable/bg_album" />
+                            android:src="@drawable/bg_album_5" />
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
@@ -250,12 +259,63 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="120dp"
-                            android:src="@drawable/bg_album" />
+                            android:src="@drawable/bg_albumn_6" />
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
 
             </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Recommend"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="See all"
+                    android:textSize="10sp"
+                    android:background="@drawable/btn_outline"/>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingEnd="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include layout="@layout/rec_col"/>
+                    <include layout="@layout/rec_col"/>
+                    <include layout="@layout/rec_col"/>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+
+            </LinearLayout>
+
 
 
         </LinearLayout>
