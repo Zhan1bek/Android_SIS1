@@ -124,6 +124,140 @@
                         android:text="Focus"/>
                 </com.google.android.material.chip.ChipGroup>
             </HorizontalScrollView>
+
+            <GridLayout
+                android:id="@+id/quick_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                app:cardBackgroundColor="@color/gradient_2"
+                app:cardCornerRadius="8dp"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:src="@drawable/bg_album"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@color/gradient_2"
+                    app:cardCornerRadius="8dp"
+                    android:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bg_album"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@color/gradient_2"
+                    app:cardCornerRadius="8dp"
+                    android:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bg_album" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@color/gradient_2"
+                    app:cardCornerRadius="8dp"
+                    android:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bg_album" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@color/gradient_2"
+                    app:cardCornerRadius="8dp"
+                    android:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bg_album" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    app:cardBackgroundColor="@color/gradient_2"
+                    app:cardCornerRadius="8dp"
+                    android:layout_columnWeight="1">
+
+                    <LinearLayout
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:src="@drawable/bg_album" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
