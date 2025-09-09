@@ -3,13 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/red"
+        android:background="@color/gradient_2"
         app:title=""
         app:navigationIcon="@drawable/outline_arrow_drop_down_circle_24"
         app:contentInsetStartWithNavigation="0dp"
@@ -17,22 +18,114 @@
         android:paddingEnd="8dp"
         app:navigationIconTint="@color/white">
 
-        <View
-            android:layout_width="200dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="8dp"
-            android:src="@drawable/baseline_search_24"
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_search_24"
+                app:tint="@color/white"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/outline_alarm_on_24"/>
 
 
-
-
-        <!-- Тут можно вставлять иконки/картинки/текст -->
-        <!-- Например, позже добавим поиск, колокол, профиль -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/outline_account_box_24" />
+        </LinearLayout>
     </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleLine="true"
+                    app:chipSpacingHorizontal="8dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_relax"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        android:text="Relax"
+                        app:chipBackgroundColor="@color/ch_bg"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_workout"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ch_bg"
+                        android:text="Workout"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_energy"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ch_bg"
+                        android:text="Energy"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_podcast"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ch_bg"
+                        android:text="Podcast"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_focus"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        app:chipBackgroundColor="@color/ch_bg"
+                        android:text="Focus"/>
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
+
 
